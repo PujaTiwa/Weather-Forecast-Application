@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Application</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script> -->
+    <link rel="Icon" href="https://i.pinimg.com/originals/77/0b/80/770b805d5c99c7931366c2e84e88f251.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/6e5f910418.js" crossorigin="anonymous"></script>
+  
+      <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 class="text-4xl font-bold py-4 bg-[#0cc1f5] text-center text-white">Weather Application</h1>
+    <div class="container mx-auto flex gap-12 px-2 py-6">
+        <div class="weather_inp ">
+            <h3>Enter a City Name</h3>
+            <input class="mt-4 mb-4 w-[100%] h-[46px] px-[16px] text-[1.07rem] outline-none rounded border-0" id="city_input" type="text" placeholder="E.g., New Delhi, India, London, New York">
+            <button class="w-[100%] py-[10px] text-[1rem] outline-none rounded border-0 text-white bg-[#0cc1f5] cursor-pointer" id="search_button">Search</button>
+            <div class="separator h-[1px] w-[100%] bg-[#fff] mt-[25px] mb-[25px] flex items-center justify-center"></div>
+            <button class="w-[100%] py-[10px] text-[1rem] outline-none rounded border-0 text-white bg-[#6C7570] cursor-pointer" id="location_button">Use Current Location</button>
+        </div>
+        <div class="weather-data w-[100%]">
+            <div class="current_weather bg-[#0cc1f5] text-white
+            pt-[20px] pr-[70px] pb-[20px] pl-[20px] rounded flex justify-between">
+                <div class="details">
+                    <h2 class="text-[1.7rem]">______ ( _______ )</h2>
+                    <h4>Temp: ___ °C</h4>
+                  <h4>Wind: ___ M/S</h4>
+                  <h4>Humidity: ___ %</h4>
+                </div>
+            </div>
+            <div class="days_forecast">
+              <h2>5 Days Forecast</h2>
+              <ul class="weather_cards">
+                <li class="card">
+                  <h3>( _____ )</h3>
+                  <h4>Temp: ___ °C</h4>
+                  <h4>Wind: ___ M/S</h4>
+                  <h4>Humidity: ___ %</h4>
+                </li>
+                <li class="card">
+                  <h3>( _____ )</h3>
+                  <h4>Temp: ___ °C</h4>
+                  <h4>Wind: ___ M/S</h4>
+                  <h4>Humidity: ___ %</h4>
+                </li>
+                <li class="card">
+                  <h3>( _____ )</h3>
+                  <h4>Temp: ___ °C</h4>
+                  <h4>Wind: ___ M/S</h4>
+                  <h4>Humidity: ___ %</h4>
+                </li>
+                <li class="card">
+                  <h3>( _____ )</h3>
+                  <h4>Temp: ___ °C</h4>
+                  <h4>Wind: ___ M/S</h4>
+                  <h4>Humidity: ___ %</h4>
+                </li>
+                <li class="card">
+                  <h3>( _____ )</h3>
+                  <h4>Temp: ___ °C</h4>
+                  <h4>Wind: ___ M/S</h4>
+                  <h4>Humidity: ___ %</h4>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js" defer></script>
+</body>
+</html>
